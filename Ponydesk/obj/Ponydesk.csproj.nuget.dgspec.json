@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\myprojects\\ponydesk\\Ponydesk\\Ponydesk.csproj": {}
+    "F:\\Projects\\Ponydesk\\Ponydesk\\Ponydesk.csproj": {}
   },
   "projects": {
-    "D:\\myprojects\\ponydesk\\Ponydesk\\Ponydesk.csproj": {
+    "F:\\Projects\\Ponydesk\\Ponydesk\\Ponydesk.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myprojects\\ponydesk\\Ponydesk\\Ponydesk.csproj",
+        "projectUniqueName": "F:\\Projects\\Ponydesk\\Ponydesk\\Ponydesk.csproj",
         "projectName": "Ponydesk",
-        "projectPath": "D:\\myprojects\\ponydesk\\Ponydesk\\Ponydesk.csproj",
-        "packagesPath": "C:\\Users\\AYARNYKH\\.nuget\\packages\\",
-        "outputPath": "D:\\myprojects\\ponydesk\\Ponydesk\\obj\\",
+        "projectPath": "F:\\Projects\\Ponydesk\\Ponydesk\\Ponydesk.csproj",
+        "packagesPath": "C:\\Users\\almni\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\Ponydesk\\Ponydesk\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\AYARNYKH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\almni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,6 +44,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "BlazorStrap": {
+              "target": "Package",
+              "version": "[5.1.102.51923, )"
+            },
+            "BlazorStrap.V5": {
+              "target": "Package",
+              "version": "[5.1.102.51723, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

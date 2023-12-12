@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\myprojects\\ponydesk\\DataAccessLayer\\DataAccessLayer.csproj": {}
+    "F:\\Projects\\Ponydesk\\DataAccessLayer\\DataAccessLayer.csproj": {}
   },
   "projects": {
-    "D:\\myprojects\\ponydesk\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "F:\\Projects\\Ponydesk\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\myprojects\\ponydesk\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "F:\\Projects\\Ponydesk\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "D:\\myprojects\\ponydesk\\DataAccessLayer\\DataAccessLayer.csproj",
-        "packagesPath": "C:\\Users\\AYARNYKH\\.nuget\\packages\\",
-        "outputPath": "D:\\myprojects\\ponydesk\\DataAccessLayer\\obj\\",
+        "projectPath": "F:\\Projects\\Ponydesk\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\almni\\.nuget\\packages\\",
+        "outputPath": "F:\\Projects\\Ponydesk\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\AYARNYKH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\almni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -1,3 +1,4 @@
+using BlazorStrap;
 using Ponydesk.Components;
 
 namespace Ponydesk
@@ -11,7 +12,7 @@ namespace Ponydesk
             // Add services to the container.
             builder.Services.AddRazorComponents()
                 .AddInteractiveServerComponents();
-
+            builder.Services.AddBlazorStrap();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

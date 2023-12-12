@@ -1,8 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "yDN4/injYDroqkME+PHshv1/HwtY/0sO1leYn2xA9aIRInd7x1L2hn4tS82dsdkJe1SYx3WKlf9OzEaZ+EOwlQ==",
+  "dgSpecHash": "omu/w8wP0cs6QjEOYzb/jYbwmM42rRmynPPrtfC4k9eUD9/65Mynf8589Tb983jqlglcGpZHm7l5lW13cuqQRg==",
   "success": true,
-  "projectFilePath": "D:\\myprojects\\ponydesk\\Ponydesk\\Ponydesk.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "F:\\Projects\\Ponydesk\\Ponydesk\\Ponydesk.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\almni\\.nuget\\packages\\blazorcomponentutilities\\1.7.1\\blazorcomponentutilities.1.7.1.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\blazorstrap\\5.1.102.51923\\blazorstrap.5.1.102.51923.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\blazorstrap.v5\\5.1.102.51723\\blazorstrap.v5.5.1.102.51723.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\7.0.5\\microsoft.aspnetcore.components.analyzers.7.0.5.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.5\\microsoft.aspnetcore.components.forms.7.0.5.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.5\\microsoft.aspnetcore.components.web.7.0.5.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.5\\microsoft.aspnetcore.metadata.7.0.5.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.extensions.options\\7.0.1\\microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\microsoft.jsinterop\\7.0.5\\microsoft.jsinterop.7.0.5.nupkg.sha512",
+    "C:\\Users\\almni\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
