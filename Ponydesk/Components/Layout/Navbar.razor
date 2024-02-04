@@ -1,0 +1,23 @@
+﻿@page "/Navbar"
+
+<BSNavbar Color="BSColor.Primary" IsFixedTop="true">
+    <BSContainer Container="Container.Fluid">
+        <BSNavbarBrand Url="javascript:void(0);">
+            <img src="./img/pony_brand.svg" width="30" class="svg-rotate" />
+            PonyDesk
+        </BSNavbarBrand>        
+        <BSCollapse IsInNavbar="true">
+            <Toggler>
+                <BSNavbarToggle />
+            </Toggler>
+            <Content>
+                <BSNav MarginEnd="Margins.Auto" MarginBottom="Margins.Small" Class="mb-lg-0">
+                    <BSNavItem IsActive="true" Url="javascript:void(0);">Создать заявку</BSNavItem>
+                </BSNav>
+            </Content>
+        </BSCollapse>
+    </BSContainer>
+</BSNavbar>
+@code {
+
+}

@@ -41,3 +41,11 @@ build_metadata.AdditionalFiles.CssScope =
 [F:/Projects/Ponydesk/Ponydesk/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-lvucsdyy5s
+
+[F:/Projects/Ponydesk/Ponydesk/Components/Layout/Navbar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2YmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-febw6i4l8w
+
+[F:/Projects/Ponydesk/Ponydesk/Components/Layout/Sidebar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcU2lkZWJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-jl4bkovb4h
