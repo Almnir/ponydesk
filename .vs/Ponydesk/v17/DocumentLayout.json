@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "F:\\Projects\\Ponydesk\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|solutionrelative:ponydesk\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|solutionrelative:ponydesk\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\layout\\navbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|solutionrelative:ponydesk\\components\\layout\\navbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\layout\\navbar.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|solutionrelative:ponydesk\\components\\layout\\navbar.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\layout\\sidebar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|solutionrelative:ponydesk\\components\\layout\\sidebar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\layout\\sidebar.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|solutionrelative:ponydesk\\components\\layout\\sidebar.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|solutionrelative:ponydesk\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D3753785-9EF6-431F-A0E2-5AE55E5DA454}|DataAccessLayer\\DataAccessLayer.csproj|f:\\projects\\ponydesk\\dataaccesslayer\\ponycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3753785-9EF6-431F-A0E2-5AE55E5DA454}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ponycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -29,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|solutionrelative:ponydesk\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3753785-9EF6-431F-A0E2-5AE55E5DA454}|DataAccessLayer\\DataAccessLayer.csproj|f:\\projects\\ponydesk\\dataaccesslayer\\migrations\\20240204182356_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3753785-9EF6-431F-A0E2-5AE55E5DA454}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\migrations\\20240204182356_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3753785-9EF6-431F-A0E2-5AE55E5DA454}|DataAccessLayer\\DataAccessLayer.csproj|f:\\projects\\ponydesk\\dataaccesslayer\\ponycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3753785-9EF6-431F-A0E2-5AE55E5DA454}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\ponycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3753785-9EF6-431F-A0E2-5AE55E5DA454}|DataAccessLayer\\DataAccessLayer.csproj|f:\\projects\\ponydesk\\dataaccesslayer\\entities\\application.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{D3753785-9EF6-431F-A0E2-5AE55E5DA454}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entities\\priority.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|solutionrelative:ponydesk\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|f:\\projects\\ponydesk\\ponydesk\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2A1D9A6-21E8-4C7D-BA2E-9ABF91D52AA4}|Ponydesk\\Ponydesk.csproj|solutionrelative:ponydesk\\components\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -114,89 +98,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Navbar.razor.css",
-              "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Layout\\Navbar.razor.css",
-              "RelativeDocumentMoniker": "Ponydesk\\Components\\Layout\\Navbar.razor.css",
-              "ToolTip": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Layout\\Navbar.razor.css",
-              "RelativeToolTip": "Ponydesk\\Components\\Layout\\Navbar.razor.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-02-04T21:32:04.1Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Sidebar.razor.css",
-              "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Layout\\Sidebar.razor.css",
-              "RelativeDocumentMoniker": "Ponydesk\\Components\\Layout\\Sidebar.razor.css",
-              "ToolTip": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Layout\\Sidebar.razor.css",
-              "RelativeToolTip": "Ponydesk\\Components\\Layout\\Sidebar.razor.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-02-04T21:25:40.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Sidebar.razor",
-              "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Layout\\Sidebar.razor",
-              "RelativeDocumentMoniker": "Ponydesk\\Components\\Layout\\Sidebar.razor",
-              "ToolTip": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Layout\\Sidebar.razor",
-              "RelativeToolTip": "Ponydesk\\Components\\Layout\\Sidebar.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-04T21:22:21.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Navbar.razor",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Layout\\Navbar.razor",
               "RelativeDocumentMoniker": "Ponydesk\\Components\\Layout\\Navbar.razor",
               "ToolTip": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Layout\\Navbar.razor",
               "RelativeToolTip": "Ponydesk\\Components\\Layout\\Navbar.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-04T20:53:14.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-02-04T20:53:14.565Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20240204182356_InitialCreate.cs",
-              "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Migrations\\20240204182356_InitialCreate.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Migrations\\20240204182356_InitialCreate.cs",
-              "ToolTip": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Migrations\\20240204182356_InitialCreate.cs",
-              "RelativeToolTip": "DataAccessLayer\\Migrations\\20240204182356_InitialCreate.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-04T18:24:05.672Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Home.razor",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "Ponydesk\\Components\\Pages\\Home.razor",
               "ToolTip": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "Ponydesk\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2023-12-12T21:11:24.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "Status.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\Status.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Status.cs",
@@ -208,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 13,
               "Title": "User.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\User.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\User.cs",
@@ -220,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "IRepository.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\IRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\IRepository.cs",
@@ -232,19 +163,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "PonyContext.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\PonyContext.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\PonyContext.cs",
               "ToolTip": "F:\\Projects\\Ponydesk\\DataAccessLayer\\PonyContext.cs",
               "RelativeToolTip": "DataAccessLayer\\PonyContext.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA1wBcAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-01-27T19:46:16.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Application.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\Application.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Application.cs",
@@ -256,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "Group.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\Group.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Group.cs",
@@ -268,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "Category.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Category.cs",
@@ -280,7 +211,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Ponydesk\\Components\\App.razor",
+              "ToolTip": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\App.razor",
+              "RelativeToolTip": "Ponydesk\\Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2023-12-12T21:05:03.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "Ponydesk\\Components\\Layout\\MainLayout.razor",
@@ -288,12 +231,11 @@
               "RelativeToolTip": "Ponydesk\\Components\\Layout\\MainLayout.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2023-12-12T21:11:16.173Z",
-              "EditorCaption": ""
+              "WhenOpened": "2023-12-12T21:11:16.173Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Error.razor",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "Ponydesk\\Components\\Pages\\Error.razor",
@@ -301,12 +243,11 @@
               "RelativeToolTip": "Ponydesk\\Components\\Pages\\Error.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-01-27T20:12:08.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-01-27T20:12:08.29Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "IApplicationRepository.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\IApplicationRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\IApplicationRepository.cs",
@@ -318,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 11,
               "Title": "Repository.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Repository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Repository.cs",
@@ -330,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 21,
               "Title": "Department.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\Department.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Department.cs",
@@ -342,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 15,
               "Title": "Service.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\Service.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Service.cs",
@@ -354,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 16,
               "Title": "Priority.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\Priority.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Priority.cs",
@@ -366,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 20,
               "Title": "KnowledgeBase.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\KnowledgeBase.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\KnowledgeBase.cs",
@@ -378,31 +319,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 12,
               "Title": "ApplicationRepository.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\ApplicationRepository.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\ApplicationRepository.cs",
               "ToolTip": "F:\\Projects\\Ponydesk\\DataAccessLayer\\ApplicationRepository.cs",
               "RelativeToolTip": "DataAccessLayer\\ApplicationRepository.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAABRwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-01-27T19:45:56.336Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "App.razor",
-              "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\App.razor",
-              "RelativeDocumentMoniker": "Ponydesk\\Components\\App.razor",
-              "ToolTip": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\App.razor",
-              "RelativeToolTip": "Ponydesk\\Components\\App.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2023-12-12T21:05:03.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Program.cs",
               "RelativeDocumentMoniker": "Ponydesk\\Program.cs",
@@ -414,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 17,
               "Title": "_Imports.razor",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\Ponydesk\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "Ponydesk\\Components\\_Imports.razor",
@@ -426,13 +355,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 19,
               "Title": "Company.cs",
               "DocumentMoniker": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\Company.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Entities\\Company.cs",
               "ToolTip": "F:\\Projects\\Ponydesk\\DataAccessLayer\\Entities\\Company.cs",
               "RelativeToolTip": "DataAccessLayer\\Entities\\Company.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBkAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwBkAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2023-12-11T20:53:34.548Z"
             }

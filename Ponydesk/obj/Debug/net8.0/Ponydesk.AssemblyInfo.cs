@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ponydesk")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d747c76e7d1b26f756de0ef40122a575d8e1b3d3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d79188c2b400493a4f3ce4cf068a3fc74155395b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ponydesk")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ponydesk")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

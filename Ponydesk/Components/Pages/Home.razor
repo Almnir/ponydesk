@@ -3,41 +3,66 @@
 @inject IBlazorStrap _blazorStrap
 
 <PageTitle>Home</PageTitle>
-<br />
-<BSInputSwitch CheckedValue="@("Vapor")" UnCheckedValue="@("Lux")" >
-    Current theme is Vapor
-</BSInputSwitch>
-<br />
-<BSTable IsResponsive="true" IsStriped="true" IsBordered="true" IsDark="true">
-    <BSTHead>
-        <BSTR>
-            <BSTD>#</BSTD>
-            <BSTD>First</BSTD>
-            <BSTD>Last</BSTD>
-            <BSTD>Handle</BSTD>
-        </BSTR>
-    </BSTHead>
-    <BSTBody>
-        <BSTR>
-            <BSTD>1</BSTD>
-            <BSTD>John</BSTD>
-            <BSTD>Doe</BSTD>
-            <BSTD>JohnDoe <br />media.com</BSTD>
-        </BSTR>
-        <BSTR>
-            <BSTD>2</BSTD>
-            <BSTD>Jane</BSTD>
-            <BSTD>Doe</BSTD>
-            <BSTD>JaneDoe <br />media.com</BSTD>
-        </BSTR>
-    </BSTBody>
-    <BSTFoot>
-        <BSTR>
-            <BSTD ColSpan="4">Spanned Table Footer Here</BSTD>
-        </BSTR>
 
-    </BSTFoot>
-</BSTable>
+<br />
+<br />
+<BSContainer Container="Container.Default" MarginTop="Margins.ExtraLarge">
+    <BSButtonGroup>
+        <BSButton Color="BSColor.Default" DataId="circleTooltip" IsActive="true" Padding="0">
+            <span class="material-icons">add_circle</span>
+        </BSButton>
+        <BSTooltip Placement="Placement.Left" Target="circleTooltip">Tooltip on bottom</BSTooltip>
+        <BSButton Color="BSColor.Default" DataId="personTooltip" IsActive="true" Padding="0">
+            <span class="material-icons">person</span>
+        </BSButton>
+        <BSTooltip Placement="Placement.Left" Target="personTooltip">Tooltip on bottom</BSTooltip>
+        <BSButton Color="BSColor.Default" DataId="personTooltip" IsActive="true" Padding="0">
+            <span class="material-icons">person</span>
+        </BSButton>
+        <BSTooltip Placement="Placement.Left" Target="personTooltip">Tooltip on bottom</BSTooltip>
+        <BSButton Color="BSColor.Default" DataId="personTooltip" IsActive="true" Padding="0">
+            <span class="material-icons">person</span>
+        </BSButton>
+        <BSTooltip Placement="Placement.Left" Target="personTooltip">Tooltip on bottom</BSTooltip>
+        <BSButton Color="BSColor.Default" DataId="personTooltip" IsActive="true" Padding="0">
+            <span class="material-icons">person</span>
+        </BSButton>
+        <BSTooltip Placement="Placement.Left" Target="personTooltip">Tooltip on bottom</BSTooltip>
+    </BSButtonGroup>
+</BSContainer>
+<BSContainer Container="Container.Default" MarginTop="Margins.Small">
+    <BSTable IsResponsive="true" IsStriped="true" IsBordered="true" IsDark="false">
+        <BSTHead>
+            <BSTR>
+                <BSTD>#</BSTD>
+                <BSTD>First</BSTD>
+                <BSTD>Last</BSTD>
+                <BSTD>Handle</BSTD>
+            </BSTR>
+        </BSTHead>
+        <BSTBody>
+            <BSTR>
+                <BSTD>1</BSTD>
+                <BSTD>John</BSTD>
+                <BSTD>Doe</BSTD>
+                <BSTD>JohnDoe <br />media.com</BSTD>
+            </BSTR>
+            <BSTR>
+                <BSTD>2</BSTD>
+                <BSTD>Jane</BSTD>
+                <BSTD>Doe</BSTD>
+                <BSTD>JaneDoe <br />media.com</BSTD>
+            </BSTR>
+        </BSTBody>
+        <BSTFoot>
+            <BSTR>
+                <BSTD ColSpan="4">Spanned Table Footer Here</BSTD>
+            </BSTR>
+
+        </BSTFoot>
+    </BSTable>
+
+</BSContainer>
 
 @code {
     private string? Selected { get; set; }
