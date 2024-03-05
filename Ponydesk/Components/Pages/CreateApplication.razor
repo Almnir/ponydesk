@@ -1,0 +1,100 @@
+﻿@page "/create"
+
+@using EditorJS
+@using System.Text.Json.Nodes
+
+<BSContainer>
+    <h1>
+        Создать заявку
+    </h1>
+    <BSCard CardType="CardType.Card" MarginTop="Margins.ExtraLarge">
+        <div class="row">
+            <div class="col-sm">
+                <BSInputGroup MarginBottom="Margins.Medium">
+                    <span class="@BS.Input_Group_Text">Заказчик</span>
+                    <BSInput InputType="InputType.Select" Value="@("")" />
+                </BSInputGroup>
+            </div>
+            <div class="col-sm">
+                <BSInputGroup MarginBottom="Margins.Medium">
+                    <span class="@BS.Input_Group_Text">Категория сервиса</span>
+                    <BSInput InputType="InputType.Select" Value="@("")" />
+                </BSInputGroup>
+            </div>
+            <div class="col-sm">
+                <BSInputGroup MarginBottom="Margins.Medium">
+                    <span class="@BS.Input_Group_Text">Cервис </span>
+                    <BSInput InputType="InputType.Select" Value="@("")" />
+                </BSInputGroup>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <BSInputGroup MarginBottom="Margins.Medium">
+                    <span class="@BS.Input_Group_Text">Статус</span>
+                    <BSInput InputType="InputType.Select" Value="@("")" />
+                </BSInputGroup>
+            </div>
+            <div class="col-sm">
+                <BSInputGroup MarginBottom="Margins.Medium">
+                    <span class="@BS.Input_Group_Text">Категория</span>
+                    <BSInput InputType="InputType.Select" Value="@("")" />
+                </BSInputGroup>
+            </div>
+            <div class="col-sm">
+                <BSInputGroup MarginBottom="Margins.Medium">
+                    <span class="@BS.Input_Group_Text">Приоритет</span>
+                    <BSInput InputType="InputType.Select" Value="@("")" />
+                </BSInputGroup>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <BSInputGroup MarginBottom="Margins.Medium">
+                    <span class="@BS.Input_Group_Text">Тема обращения</span>
+                    <BSInput InputType="InputType.Text" Value="@("")" />
+                </BSInputGroup>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <BSInputGroup MarginBottom="Margins.Medium">
+                    <span class="@BS.Input_Group_Text">Содержание</span>
+                    @* <BSInput InputType="InputType.TextArea" Value="@("")" /> *@
+                    <Editor Id="editorjs-blazor" Name="editorjs-blazor" Value="EditorValue" ValueChanged="OnEditorValueChanged" Tools="EditorTools" Style="margin-top: 20px; border: thin dashed grey; padding: 0 20px 0 20px;" />
+                </BSInputGroup>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-3">
+                <BSInputFile IsRequired="true" ValidWhen="@(() => Modal.HasFile)" OnChange="OnFileChange" />
+                <BSFeedback For="() => Modal.HasFile" />
+            </div>
+        </div>
+    </BSCard>
+</BSContainer>
+
+<script src="/_content/EditorJS/lib/editorjs-bundle.js" asp-append-version="true"></script>
+@code {
+    static string editor_tools_json = """"
+    {"Header":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"LinkTool":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"NestedList":{"LoadActions":{"OptionsNamingScheme":"CamelCase","OverrideOptionsKey":"list"}},"Marker":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"Warning":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"Checklist":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"CodeTool":{"LoadActions":{"OptionsNamingScheme":"CamelCase","OverrideOptionsKey":"code"}},"Delimiter":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"SimpleImage":{"LoadActions":{"OptionsNamingScheme":"CamelCase","OverrideOptionsKey":"image"}},"Embed":{"LoadActions":{"OptionsNamingScheme":"CamelCase"},"options":{"config":{"services":{"instagram":true,"youtube":true,"vimeo":true,"imgur":true,"twitter":true,"facebook":true}}}},"InlineCode":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"Quote":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"Table":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}}}
+    """";
+    JsonObject EditorTools = JsonObject.Parse(editor_tools_json)?.AsObject() ?? new();
+    JsonObject EditorValue;
+
+    public Task OnEditorValueChanged(JsonObject value) => Task.FromResult(EditorValue = value);
+
+    private ModalClass Modal { get; set; } = new ModalClass();
+    private void OnFileChange(InputFileChangeEventArgs e)
+    {
+        // Resets Validation. Everytime InputFile is clicked it resets.
+        Modal.HasFile = null;
+        if (e.FileCount > 0)
+            Modal.HasFile = true;
+    }
+
+    private class ModalClass
+    {
+        public bool? HasFile { get; set; }
+    }
+}

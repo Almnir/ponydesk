@@ -13,8 +13,22 @@
     <SourceRoot Include="C:\Users\almni\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)editorjs\1.2.0.1\contentFiles\any\net8.0\libman.json" Condition="Exists('$(NuGetPackageRoot)editorjs\1.2.0.1\contentFiles\any\net8.0\libman.json')">
+      <NuGetPackageId>EditorJS</NuGetPackageId>
+      <NuGetPackageVersion>1.2.0.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>libman.json</Link>
+    </Content>
+  </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)editorjs\1.2.0.1\buildTransitive\EditorJS.props" Condition="Exists('$(NuGetPackageRoot)editorjs\1.2.0.1\buildTransitive\EditorJS.props')" />
     <Import Project="$(NuGetPackageRoot)blazorstrap\5.1.102.51923\buildTransitive\BlazorStrap.props" Condition="Exists('$(NuGetPackageRoot)blazorstrap\5.1.102.51923\buildTransitive\BlazorStrap.props')" />
     <Import Project="$(NuGetPackageRoot)blazorstrap.v5\5.1.102.51723\buildTransitive\BlazorStrap.V5.props" Condition="Exists('$(NuGetPackageRoot)blazorstrap.v5\5.1.102.51723\buildTransitive\BlazorStrap.V5.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_Web_LibraryManager_Build Condition=" '$(PkgMicrosoft_Web_LibraryManager_Build)' == '' ">C:\Users\almni\.nuget\packages\microsoft.web.librarymanager.build\2.1.175</PkgMicrosoft_Web_LibraryManager_Build>
+  </PropertyGroup>
 </Project>

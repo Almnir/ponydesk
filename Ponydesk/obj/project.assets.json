@@ -50,6 +50,32 @@
           "buildMultiTargeting/BlazorStrap.V5.props": {}
         }
       },
+      "EditorJS/1.2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "8.0.1",
+          "Microsoft.Web.LibraryManager.Build": "2.1.175"
+        },
+        "compile": {
+          "lib/net8.0/EditorJS.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/EditorJS.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0/libman.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/EditorJS.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/EditorJS.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.2": {
         "type": "package",
         "dependencies": {
@@ -91,38 +117,39 @@
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
         }
       },
-      "Microsoft.AspNetCore.Components.Forms/7.0.5": {
+      "Microsoft.AspNetCore.Components.Forms/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "7.0.5"
+          "Microsoft.AspNetCore.Components": "8.0.1"
         },
         "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Components.Forms.dll": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Components.Forms.dll": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll": {
             "related": ".xml"
           }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/7.0.5": {
+      "Microsoft.AspNetCore.Components.Web/8.0.1": {
         "type": "package",
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "7.0.5",
-          "Microsoft.AspNetCore.Components.Forms": "7.0.5",
-          "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Microsoft.JSInterop": "7.0.5",
-          "System.IO.Pipelines": "7.0.0"
+          "Microsoft.AspNetCore.Components": "8.0.1",
+          "Microsoft.AspNetCore.Components.Forms": "8.0.1",
+          "Microsoft.Extensions.DependencyInjection": "8.0.0",
+          "Microsoft.Extensions.Primitives": "8.0.0",
+          "Microsoft.JSInterop": "8.0.1",
+          "System.IO.Pipelines": "8.0.0"
         },
         "compile": {
-          "lib/net7.0/Microsoft.AspNetCore.Components.Web.dll": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.Web.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Microsoft.AspNetCore.Components.Web.dll": {
+          "lib/net8.0/Microsoft.AspNetCore.Components.Web.dll": {
             "related": ".xml"
           }
         }
@@ -140,18 +167,18 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection/7.0.0": {
+      "Microsoft.Extensions.DependencyInjection/8.0.0": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
         },
         "compile": {
-          "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll": {
             "related": ".xml"
           }
         },
@@ -230,33 +257,157 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.JSInterop/7.0.5": {
+      "Microsoft.JSInterop/8.0.1": {
         "type": "package",
         "compile": {
-          "lib/net7.0/Microsoft.JSInterop.dll": {
+          "lib/net8.0/Microsoft.JSInterop.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/Microsoft.JSInterop.dll": {
+          "lib/net8.0/Microsoft.JSInterop.dll": {
             "related": ".xml"
           }
         }
       },
-      "System.IO.Pipelines/7.0.0": {
+      "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.IO.Pipelines.dll": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.NETCore.Targets/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Microsoft.Web.LibraryManager.Build/2.1.175": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime.Loader": "4.3.0"
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "System.IO/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0",
+          "System.Text.Encoding": "4.3.0",
+          "System.Threading.Tasks": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.IO.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.IO.Pipelines/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.IO.Pipelines.dll": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Reflection/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.IO": "4.3.0",
+          "System.Reflection.Primitives": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Reflection.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Reflection.Primitives/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.0/System.Reflection.Primitives.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Runtime.Loader/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "System.IO": "4.3.0",
+          "System.Reflection": "4.3.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.5/System.Runtime.Loader.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.5/System.Runtime.Loader.dll": {}
+        }
+      },
+      "System.Text.Encoding/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Text.Encoding.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "System.Threading.Tasks/4.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0",
+          "Microsoft.NETCore.Targets": "1.1.0",
+          "System.Runtime": "4.3.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/System.Threading.Tasks.dll": {
+            "related": ".xml"
+          }
         }
       }
     }
@@ -317,6 +468,216 @@
         "staticwebassets/BlazorStrap.V5.bundle.scp.css"
       ]
     },
+    "EditorJS/1.2.0.1": {
+      "sha512": "PL/2l2M5Qoekwbd6bSbvdoSITcFL/SqAa6XwiU5+J6IKNKyoIxu/w6AF8JHdwuhUUBuj2wnTlJWbJmFVbVt8CQ==",
+      "type": "package",
+      "path": "editorjs/1.2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "build/EditorJS.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/EditorJS.props",
+        "buildTransitive/EditorJS.props",
+        "content/libman.json",
+        "contentFiles/any/net8.0/libman.json",
+        "editorjs.1.2.0.1.nupkg.sha512",
+        "editorjs.ico",
+        "editorjs.nuspec",
+        "editorjs.png",
+        "lib/net8.0/EditorJS.dll",
+        "staticwebassets/lib/editorjs-bundle.js",
+        "staticwebassets/lib/editorjs-interop.js",
+        "staticwebassets/lib/editorjs/attaches/LICENSE",
+        "staticwebassets/lib/editorjs/attaches/README.md",
+        "staticwebassets/lib/editorjs/attaches/dev/server.js",
+        "staticwebassets/lib/editorjs/attaches/dev/server.min.js",
+        "staticwebassets/lib/editorjs/attaches/dist/bundle.js",
+        "staticwebassets/lib/editorjs/attaches/dist/bundle.min.js",
+        "staticwebassets/lib/editorjs/attaches/package.json",
+        "staticwebassets/lib/editorjs/checklist/LICENSE",
+        "staticwebassets/lib/editorjs/checklist/README.md",
+        "staticwebassets/lib/editorjs/checklist/dist/checklist.mjs",
+        "staticwebassets/lib/editorjs/checklist/dist/checklist.umd.js",
+        "staticwebassets/lib/editorjs/checklist/dist/checklist.umd.min.js",
+        "staticwebassets/lib/editorjs/checklist/package.json",
+        "staticwebassets/lib/editorjs/code/LICENSE",
+        "staticwebassets/lib/editorjs/code/README.md",
+        "staticwebassets/lib/editorjs/code/dist/code.mjs",
+        "staticwebassets/lib/editorjs/code/dist/code.umd.js",
+        "staticwebassets/lib/editorjs/code/dist/code.umd.min.js",
+        "staticwebassets/lib/editorjs/code/package.json",
+        "staticwebassets/lib/editorjs/delimiter/LICENSE",
+        "staticwebassets/lib/editorjs/delimiter/README.md",
+        "staticwebassets/lib/editorjs/delimiter/dist/delimiter.mjs",
+        "staticwebassets/lib/editorjs/delimiter/dist/delimiter.umd.js",
+        "staticwebassets/lib/editorjs/delimiter/dist/delimiter.umd.min.js",
+        "staticwebassets/lib/editorjs/delimiter/package.json",
+        "staticwebassets/lib/editorjs/editorjs/LICENSE",
+        "staticwebassets/lib/editorjs/editorjs/README.md",
+        "staticwebassets/lib/editorjs/editorjs/dist/editorjs.mjs",
+        "staticwebassets/lib/editorjs/editorjs/dist/editorjs.umd.js",
+        "staticwebassets/lib/editorjs/editorjs/dist/editorjs.umd.min.js",
+        "staticwebassets/lib/editorjs/editorjs/dist/vendor.LICENSE.txt",
+        "staticwebassets/lib/editorjs/editorjs/package.json",
+        "staticwebassets/lib/editorjs/editorjs/types/api/block.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/blocks.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/caret.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/events.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/i18n.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/index.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/inline-toolbar.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/listeners.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/notifier.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/readonly.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/sanitizer.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/saver.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/selection.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/styles.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/toolbar.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/tooltip.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/api/ui.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/block-tunes/block-tune-data.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/block-tunes/block-tune.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/block-tunes/index.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/configs/conversion-config.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/configs/editor-config.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/configs/i18n-config.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/configs/i18n-dictionary.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/configs/index.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/configs/log-levels.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/configs/paste-config.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/configs/popover.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/configs/sanitizer-config.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/data-formats/block-data.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/data-formats/block-id.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/data-formats/index.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/data-formats/output-data.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/events/block/Base.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/events/block/BlockAdded.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/events/block/BlockChanged.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/events/block/BlockMoved.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/events/block/BlockRemoved.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/events/block/index.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/index.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/tools/block-tool-data.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/tools/block-tool.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/tools/hook-events.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/tools/index.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/tools/inline-tool.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/tools/paste-events.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/tools/tool-config.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/tools/tool-settings.d.ts",
+        "staticwebassets/lib/editorjs/editorjs/types/tools/tool.d.ts",
+        "staticwebassets/lib/editorjs/embed/LICENSE.md",
+        "staticwebassets/lib/editorjs/embed/README.md",
+        "staticwebassets/lib/editorjs/embed/dist/embed.mjs",
+        "staticwebassets/lib/editorjs/embed/dist/embed.umd.js",
+        "staticwebassets/lib/editorjs/embed/dist/embed.umd.min.js",
+        "staticwebassets/lib/editorjs/embed/package.json",
+        "staticwebassets/lib/editorjs/header/LICENSE",
+        "staticwebassets/lib/editorjs/header/README.md",
+        "staticwebassets/lib/editorjs/header/dist/header.mjs",
+        "staticwebassets/lib/editorjs/header/dist/header.umd.js",
+        "staticwebassets/lib/editorjs/header/dist/header.umd.min.js",
+        "staticwebassets/lib/editorjs/header/package.json",
+        "staticwebassets/lib/editorjs/image/LICENSE",
+        "staticwebassets/lib/editorjs/image/README.md",
+        "staticwebassets/lib/editorjs/image/dist/image.mjs",
+        "staticwebassets/lib/editorjs/image/dist/image.umd.js",
+        "staticwebassets/lib/editorjs/image/dist/image.umd.min.js",
+        "staticwebassets/lib/editorjs/image/package.json",
+        "staticwebassets/lib/editorjs/inline-code/LICENSE",
+        "staticwebassets/lib/editorjs/inline-code/README.md",
+        "staticwebassets/lib/editorjs/inline-code/dist/inline-code.mjs",
+        "staticwebassets/lib/editorjs/inline-code/dist/inline-code.umd.js",
+        "staticwebassets/lib/editorjs/inline-code/dist/inline-code.umd.min.js",
+        "staticwebassets/lib/editorjs/inline-code/package.json",
+        "staticwebassets/lib/editorjs/link/LICENSE",
+        "staticwebassets/lib/editorjs/link/README.md",
+        "staticwebassets/lib/editorjs/link/dist/link.mjs",
+        "staticwebassets/lib/editorjs/link/dist/link.umd.js",
+        "staticwebassets/lib/editorjs/link/dist/link.umd.min.js",
+        "staticwebassets/lib/editorjs/link/package.json",
+        "staticwebassets/lib/editorjs/list/LICENSE",
+        "staticwebassets/lib/editorjs/list/README.md",
+        "staticwebassets/lib/editorjs/list/dist/list.mjs",
+        "staticwebassets/lib/editorjs/list/dist/list.umd.js",
+        "staticwebassets/lib/editorjs/list/dist/list.umd.min.js",
+        "staticwebassets/lib/editorjs/list/package.json",
+        "staticwebassets/lib/editorjs/marker/LICENSE",
+        "staticwebassets/lib/editorjs/marker/README.md",
+        "staticwebassets/lib/editorjs/marker/dist/marker.mjs",
+        "staticwebassets/lib/editorjs/marker/dist/marker.umd.js",
+        "staticwebassets/lib/editorjs/marker/dist/marker.umd.min.js",
+        "staticwebassets/lib/editorjs/marker/package.json",
+        "staticwebassets/lib/editorjs/nested-list/LICENSE",
+        "staticwebassets/lib/editorjs/nested-list/README.md",
+        "staticwebassets/lib/editorjs/nested-list/dist/nested-list.mjs",
+        "staticwebassets/lib/editorjs/nested-list/dist/nested-list.umd.js",
+        "staticwebassets/lib/editorjs/nested-list/dist/nested-list.umd.min.js",
+        "staticwebassets/lib/editorjs/nested-list/package.json",
+        "staticwebassets/lib/editorjs/opensea/LICENSE",
+        "staticwebassets/lib/editorjs/opensea/README.md",
+        "staticwebassets/lib/editorjs/opensea/dist/OpenseaTool.mjs",
+        "staticwebassets/lib/editorjs/opensea/dist/OpenseaTool.umd.js",
+        "staticwebassets/lib/editorjs/opensea/dist/OpenseaTool.umd.min.js",
+        "staticwebassets/lib/editorjs/opensea/package.json",
+        "staticwebassets/lib/editorjs/paragraph/LICENSE",
+        "staticwebassets/lib/editorjs/paragraph/README.md",
+        "staticwebassets/lib/editorjs/paragraph/dist/paragraph.mjs",
+        "staticwebassets/lib/editorjs/paragraph/dist/paragraph.umd.js",
+        "staticwebassets/lib/editorjs/paragraph/dist/paragraph.umd.min.js",
+        "staticwebassets/lib/editorjs/paragraph/package.json",
+        "staticwebassets/lib/editorjs/quote/LICENSE",
+        "staticwebassets/lib/editorjs/quote/README.md",
+        "staticwebassets/lib/editorjs/quote/dist/quote.mjs",
+        "staticwebassets/lib/editorjs/quote/dist/quote.umd.js",
+        "staticwebassets/lib/editorjs/quote/dist/quote.umd.min.js",
+        "staticwebassets/lib/editorjs/quote/package.json",
+        "staticwebassets/lib/editorjs/raw/LICENSE",
+        "staticwebassets/lib/editorjs/raw/README.md",
+        "staticwebassets/lib/editorjs/raw/dist/raw.mjs",
+        "staticwebassets/lib/editorjs/raw/dist/raw.umd.js",
+        "staticwebassets/lib/editorjs/raw/dist/raw.umd.min.js",
+        "staticwebassets/lib/editorjs/raw/package.json",
+        "staticwebassets/lib/editorjs/simple-image/LICENSE",
+        "staticwebassets/lib/editorjs/simple-image/README.md",
+        "staticwebassets/lib/editorjs/simple-image/dist/simple-image.mjs",
+        "staticwebassets/lib/editorjs/simple-image/dist/simple-image.umd.js",
+        "staticwebassets/lib/editorjs/simple-image/dist/simple-image.umd.min.js",
+        "staticwebassets/lib/editorjs/simple-image/package.json",
+        "staticwebassets/lib/editorjs/table/LICENSE",
+        "staticwebassets/lib/editorjs/table/README.md",
+        "staticwebassets/lib/editorjs/table/dist/table.mjs",
+        "staticwebassets/lib/editorjs/table/dist/table.umd.js",
+        "staticwebassets/lib/editorjs/table/dist/table.umd.min.js",
+        "staticwebassets/lib/editorjs/table/package.json",
+        "staticwebassets/lib/editorjs/text/LICENSE",
+        "staticwebassets/lib/editorjs/text/README.md",
+        "staticwebassets/lib/editorjs/text/dist/bundle.js",
+        "staticwebassets/lib/editorjs/text/dist/bundle.min.js",
+        "staticwebassets/lib/editorjs/text/dist/index.html",
+        "staticwebassets/lib/editorjs/text/dist/text-element.cjs",
+        "staticwebassets/lib/editorjs/text/dist/text-element.mjs",
+        "staticwebassets/lib/editorjs/text/dist/text-element.umd.js",
+        "staticwebassets/lib/editorjs/text/dist/text-element.umd.min.js",
+        "staticwebassets/lib/editorjs/text/package.json",
+        "staticwebassets/lib/editorjs/underline/README.md",
+        "staticwebassets/lib/editorjs/underline/dist/bundle.js",
+        "staticwebassets/lib/editorjs/underline/dist/bundle.min.js",
+        "staticwebassets/lib/editorjs/underline/editorjs-underline.gif",
+        "staticwebassets/lib/editorjs/underline/package.json",
+        "staticwebassets/lib/editorjs/warning/LICENSE",
+        "staticwebassets/lib/editorjs/warning/README.md",
+        "staticwebassets/lib/editorjs/warning/dist/warning.mjs",
+        "staticwebassets/lib/editorjs/warning/dist/warning.umd.js",
+        "staticwebassets/lib/editorjs/warning/dist/warning.umd.min.js",
+        "staticwebassets/lib/editorjs/warning/package.json"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/8.0.2": {
       "sha512": "Z4fjwzXxsdk3GpNBd1SjltifmxWD0jpS3iWCxCjeXQecoQ1+1Nbgbv1ZTbQw2uDVbuEwpfz5cTmRgocG3HBNAA==",
       "type": "package",
@@ -367,33 +728,33 @@
         "microsoft.aspnetcore.components.analyzers.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Forms/7.0.5": {
-      "sha512": "CphmoPsk7zMeQnQOXdE8z6/WQ5npzt1UG++7YYq54MlMJYlIp8M+5fiR3CniNarThnewnAcG2iDywFQuk8JPIg==",
+    "Microsoft.AspNetCore.Components.Forms/8.0.1": {
+      "sha512": "OT05sVxJVJG8+ODSOadxy0UWBnFMu4Wb3XszqRRaGhcaCe4lEIxg9OjR8zo77r6w/AI9LoT/Enou+v02q7yZOA==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.forms/7.0.5",
+      "path": "microsoft.aspnetcore.components.forms/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.txt",
-        "lib/net7.0/Microsoft.AspNetCore.Components.Forms.dll",
-        "lib/net7.0/Microsoft.AspNetCore.Components.Forms.xml",
-        "microsoft.aspnetcore.components.forms.7.0.5.nupkg.sha512",
+        "lib/net8.0/Microsoft.AspNetCore.Components.Forms.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Components.Forms.xml",
+        "microsoft.aspnetcore.components.forms.8.0.1.nupkg.sha512",
         "microsoft.aspnetcore.components.forms.nuspec"
       ]
     },
-    "Microsoft.AspNetCore.Components.Web/7.0.5": {
-      "sha512": "lrfHlLJZ+e6Y/DRq2e2Z8OzvNwmLNevd5ol54mL05aZK6Oj+pTM1UrkP46Vmow3w1VEUxMH3tyX+S+wAPWUnvQ==",
+    "Microsoft.AspNetCore.Components.Web/8.0.1": {
+      "sha512": "EcM5S0goZOMZckt87Bb7IAbDivtMzw2DdtMLgO/87WH4NZTHLuHykNtufIWsR1ZTbSR8RfBeEE0QuAagnTsAWg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.components.web/7.0.5",
+      "path": "microsoft.aspnetcore.components.web/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.txt",
-        "lib/net7.0/Microsoft.AspNetCore.Components.Web.dll",
-        "lib/net7.0/Microsoft.AspNetCore.Components.Web.xml",
-        "microsoft.aspnetcore.components.web.7.0.5.nupkg.sha512",
+        "lib/net8.0/Microsoft.AspNetCore.Components.Web.dll",
+        "lib/net8.0/Microsoft.AspNetCore.Components.Web.xml",
+        "microsoft.aspnetcore.components.web.8.0.1.nupkg.sha512",
         "microsoft.aspnetcore.components.web.nuspec"
       ]
     },
@@ -416,15 +777,16 @@
         "microsoft.aspnetcore.metadata.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/7.0.0": {
-      "sha512": "elNeOmkeX3eDVG6pYVeV82p29hr+UKDaBhrZyWvWLw/EVZSYEkZlQdkp0V39k/Xehs2Qa0mvoCvkVj3eQxNQ1Q==",
+    "Microsoft.Extensions.DependencyInjection/8.0.0": {
+      "sha512": "V8S3bsm50ig6JSyrbcJJ8bW2b9QLGouz+G1miK3UTaOWmMtFwNNNzUf4AleyDWUmTrWMLNnFSLEQtxmxgNQnNQ==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/7.0.0",
+      "path": "microsoft.extensions.dependencyinjection/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
+        "PACKAGE.md",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.targets",
         "buildTransitive/net462/_._",
@@ -436,11 +798,13 @@
         "lib/net6.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/net7.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/net7.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -627,25 +991,215 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.JSInterop/7.0.5": {
-      "sha512": "2kXMXlpGmlgLaEMv7k1YzUsPdEVb42PWyIt/46bX0BUMcz1dmFFyCiPJK1jk64t+Pwf3GGP7ykCyxOgB79mz2w==",
+    "Microsoft.JSInterop/8.0.1": {
+      "sha512": "ePBj1uoRa+KZnkQwB3Cjxq025QT+erIcDgbDgc+yGb0FCzrE38gSBWMfbwlASPX1fifMnCwHzYvt2/gUFVp3qw==",
       "type": "package",
-      "path": "microsoft.jsinterop/7.0.5",
+      "path": "microsoft.jsinterop/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net7.0/Microsoft.JSInterop.dll",
-        "lib/net7.0/Microsoft.JSInterop.xml",
-        "microsoft.jsinterop.7.0.5.nupkg.sha512",
+        "lib/net8.0/Microsoft.JSInterop.dll",
+        "lib/net8.0/Microsoft.JSInterop.xml",
+        "microsoft.jsinterop.8.0.1.nupkg.sha512",
         "microsoft.jsinterop.nuspec"
       ]
     },
-    "System.IO.Pipelines/7.0.0": {
-      "sha512": "jRn6JYnNPW6xgQazROBLSfpdoczRw694vO5kKvMcNnpXuolEixUyw6IBuBs2Y2mlSX/LdLvyyWmfXhaI3ND1Yg==",
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
-      "path": "system.io.pipelines/7.0.0",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json"
+      ]
+    },
+    "Microsoft.NETCore.Targets/1.1.0": {
+      "sha512": "aOZA3BWfz9RXjpzt0sRJJMjAscAUm3Hoa4UWAfceV9UTYxgwZ1lZt5nO2myFf+/jetYQo4uTP7zS8sJY67BBxg==",
+      "type": "package",
+      "path": "microsoft.netcore.targets/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.targets.1.1.0.nupkg.sha512",
+        "microsoft.netcore.targets.nuspec",
+        "runtime.json"
+      ]
+    },
+    "Microsoft.Web.LibraryManager.Build/2.1.175": {
+      "sha512": "OhJ8cfzvX/rxCuEezniBQCaCqKuQtU2tNr3m3Qryu+V30lZcUrjtsg39DGZWLw6EzbJA+TUdZPfuLeEDuz3cXA==",
+      "type": "package",
+      "path": "microsoft.web.librarymanager.build/2.1.175",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "PackageIcon.png",
+        "Third-party-notice.txt",
+        "build/Microsoft.Web.LibraryManager.Build.props",
+        "build/Microsoft.Web.LibraryManager.Build.targets",
+        "microsoft.web.librarymanager.build.2.1.175.nupkg.sha512",
+        "microsoft.web.librarymanager.build.nuspec",
+        "tools/net472/Microsoft.Web.LibraryManager.Build.dll",
+        "tools/net472/Microsoft.Web.LibraryManager.Contracts.dll",
+        "tools/net472/Microsoft.Web.LibraryManager.dll",
+        "tools/net472/Minimatch.dll",
+        "tools/net472/Newtonsoft.Json.dll",
+        "tools/net472/cs/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/cs/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/de/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/de/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/es/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/es/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/fr/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/fr/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/it/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/it/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/ja/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/ja/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/ko/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/ko/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/pl/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/pl/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/pt-BR/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/pt-BR/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/ru/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/ru/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/tr/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/tr/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/zh-Hans/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/zh-Hans/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/net472/zh-Hant/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/net472/zh-Hant/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/Microsoft.Web.LibraryManager.Build.dll",
+        "tools/netstandard2.0/Microsoft.Web.LibraryManager.Contracts.dll",
+        "tools/netstandard2.0/Microsoft.Web.LibraryManager.dll",
+        "tools/netstandard2.0/Minimatch.dll",
+        "tools/netstandard2.0/Newtonsoft.Json.dll",
+        "tools/netstandard2.0/cs/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/cs/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/de/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/de/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/es/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/es/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/fr/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/fr/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/it/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/it/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/ja/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/ja/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/ko/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/ko/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/pl/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/pl/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/pt-BR/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/pt-BR/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/ru/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/ru/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/tr/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/tr/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/zh-Hans/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/zh-Hans/Microsoft.Web.LibraryManager.resources.dll",
+        "tools/netstandard2.0/zh-Hant/Microsoft.Web.LibraryManager.Contracts.resources.dll",
+        "tools/netstandard2.0/zh-Hant/Microsoft.Web.LibraryManager.resources.dll"
+      ]
+    },
+    "System.IO/4.3.0": {
+      "sha512": "3qjaHvxQPDpSOYICjUoTsmoq5u6QJAFRUITgeT/4gqkF1bajbSmb1kwSxEA8AHlofqgcKJcM8udgieRNhaJ5Cg==",
+      "type": "package",
+      "path": "system.io/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net462/System.IO.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net462/System.IO.dll",
+        "ref/netcore50/System.IO.dll",
+        "ref/netcore50/System.IO.xml",
+        "ref/netcore50/de/System.IO.xml",
+        "ref/netcore50/es/System.IO.xml",
+        "ref/netcore50/fr/System.IO.xml",
+        "ref/netcore50/it/System.IO.xml",
+        "ref/netcore50/ja/System.IO.xml",
+        "ref/netcore50/ko/System.IO.xml",
+        "ref/netcore50/ru/System.IO.xml",
+        "ref/netcore50/zh-hans/System.IO.xml",
+        "ref/netcore50/zh-hant/System.IO.xml",
+        "ref/netstandard1.0/System.IO.dll",
+        "ref/netstandard1.0/System.IO.xml",
+        "ref/netstandard1.0/de/System.IO.xml",
+        "ref/netstandard1.0/es/System.IO.xml",
+        "ref/netstandard1.0/fr/System.IO.xml",
+        "ref/netstandard1.0/it/System.IO.xml",
+        "ref/netstandard1.0/ja/System.IO.xml",
+        "ref/netstandard1.0/ko/System.IO.xml",
+        "ref/netstandard1.0/ru/System.IO.xml",
+        "ref/netstandard1.0/zh-hans/System.IO.xml",
+        "ref/netstandard1.0/zh-hant/System.IO.xml",
+        "ref/netstandard1.3/System.IO.dll",
+        "ref/netstandard1.3/System.IO.xml",
+        "ref/netstandard1.3/de/System.IO.xml",
+        "ref/netstandard1.3/es/System.IO.xml",
+        "ref/netstandard1.3/fr/System.IO.xml",
+        "ref/netstandard1.3/it/System.IO.xml",
+        "ref/netstandard1.3/ja/System.IO.xml",
+        "ref/netstandard1.3/ko/System.IO.xml",
+        "ref/netstandard1.3/ru/System.IO.xml",
+        "ref/netstandard1.3/zh-hans/System.IO.xml",
+        "ref/netstandard1.3/zh-hant/System.IO.xml",
+        "ref/netstandard1.5/System.IO.dll",
+        "ref/netstandard1.5/System.IO.xml",
+        "ref/netstandard1.5/de/System.IO.xml",
+        "ref/netstandard1.5/es/System.IO.xml",
+        "ref/netstandard1.5/fr/System.IO.xml",
+        "ref/netstandard1.5/it/System.IO.xml",
+        "ref/netstandard1.5/ja/System.IO.xml",
+        "ref/netstandard1.5/ko/System.IO.xml",
+        "ref/netstandard1.5/ru/System.IO.xml",
+        "ref/netstandard1.5/zh-hans/System.IO.xml",
+        "ref/netstandard1.5/zh-hant/System.IO.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.io.4.3.0.nupkg.sha512",
+        "system.io.nuspec"
+      ]
+    },
+    "System.IO.Pipelines/8.0.0": {
+      "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
+      "type": "package",
+      "path": "system.io.pipelines/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -662,11 +1216,411 @@
         "lib/net6.0/System.IO.Pipelines.xml",
         "lib/net7.0/System.IO.Pipelines.dll",
         "lib/net7.0/System.IO.Pipelines.xml",
+        "lib/net8.0/System.IO.Pipelines.dll",
+        "lib/net8.0/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.7.0.0.nupkg.sha512",
+        "system.io.pipelines.8.0.0.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Reflection/4.3.0": {
+      "sha512": "KMiAFoW7MfJGa9nDFNcfu+FpEdiHpWgTcS2HdMpDvt9saK3y/G4GwprPyzqjFH9NTaGPQeWNHU+iDlDILj96aQ==",
+      "type": "package",
+      "path": "system.reflection/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net462/System.Reflection.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net462/System.Reflection.dll",
+        "ref/netcore50/System.Reflection.dll",
+        "ref/netcore50/System.Reflection.xml",
+        "ref/netcore50/de/System.Reflection.xml",
+        "ref/netcore50/es/System.Reflection.xml",
+        "ref/netcore50/fr/System.Reflection.xml",
+        "ref/netcore50/it/System.Reflection.xml",
+        "ref/netcore50/ja/System.Reflection.xml",
+        "ref/netcore50/ko/System.Reflection.xml",
+        "ref/netcore50/ru/System.Reflection.xml",
+        "ref/netcore50/zh-hans/System.Reflection.xml",
+        "ref/netcore50/zh-hant/System.Reflection.xml",
+        "ref/netstandard1.0/System.Reflection.dll",
+        "ref/netstandard1.0/System.Reflection.xml",
+        "ref/netstandard1.0/de/System.Reflection.xml",
+        "ref/netstandard1.0/es/System.Reflection.xml",
+        "ref/netstandard1.0/fr/System.Reflection.xml",
+        "ref/netstandard1.0/it/System.Reflection.xml",
+        "ref/netstandard1.0/ja/System.Reflection.xml",
+        "ref/netstandard1.0/ko/System.Reflection.xml",
+        "ref/netstandard1.0/ru/System.Reflection.xml",
+        "ref/netstandard1.0/zh-hans/System.Reflection.xml",
+        "ref/netstandard1.0/zh-hant/System.Reflection.xml",
+        "ref/netstandard1.3/System.Reflection.dll",
+        "ref/netstandard1.3/System.Reflection.xml",
+        "ref/netstandard1.3/de/System.Reflection.xml",
+        "ref/netstandard1.3/es/System.Reflection.xml",
+        "ref/netstandard1.3/fr/System.Reflection.xml",
+        "ref/netstandard1.3/it/System.Reflection.xml",
+        "ref/netstandard1.3/ja/System.Reflection.xml",
+        "ref/netstandard1.3/ko/System.Reflection.xml",
+        "ref/netstandard1.3/ru/System.Reflection.xml",
+        "ref/netstandard1.3/zh-hans/System.Reflection.xml",
+        "ref/netstandard1.3/zh-hant/System.Reflection.xml",
+        "ref/netstandard1.5/System.Reflection.dll",
+        "ref/netstandard1.5/System.Reflection.xml",
+        "ref/netstandard1.5/de/System.Reflection.xml",
+        "ref/netstandard1.5/es/System.Reflection.xml",
+        "ref/netstandard1.5/fr/System.Reflection.xml",
+        "ref/netstandard1.5/it/System.Reflection.xml",
+        "ref/netstandard1.5/ja/System.Reflection.xml",
+        "ref/netstandard1.5/ko/System.Reflection.xml",
+        "ref/netstandard1.5/ru/System.Reflection.xml",
+        "ref/netstandard1.5/zh-hans/System.Reflection.xml",
+        "ref/netstandard1.5/zh-hant/System.Reflection.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.reflection.4.3.0.nupkg.sha512",
+        "system.reflection.nuspec"
+      ]
+    },
+    "System.Reflection.Primitives/4.3.0": {
+      "sha512": "5RXItQz5As4xN2/YUDxdpsEkMhvw3e6aNveFXUn4Hl/udNTCNhnKp8lT9fnc3MhvGKh1baak5CovpuQUXHAlIA==",
+      "type": "package",
+      "path": "system.reflection.primitives/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Reflection.Primitives.dll",
+        "ref/netcore50/System.Reflection.Primitives.xml",
+        "ref/netcore50/de/System.Reflection.Primitives.xml",
+        "ref/netcore50/es/System.Reflection.Primitives.xml",
+        "ref/netcore50/fr/System.Reflection.Primitives.xml",
+        "ref/netcore50/it/System.Reflection.Primitives.xml",
+        "ref/netcore50/ja/System.Reflection.Primitives.xml",
+        "ref/netcore50/ko/System.Reflection.Primitives.xml",
+        "ref/netcore50/ru/System.Reflection.Primitives.xml",
+        "ref/netcore50/zh-hans/System.Reflection.Primitives.xml",
+        "ref/netcore50/zh-hant/System.Reflection.Primitives.xml",
+        "ref/netstandard1.0/System.Reflection.Primitives.dll",
+        "ref/netstandard1.0/System.Reflection.Primitives.xml",
+        "ref/netstandard1.0/de/System.Reflection.Primitives.xml",
+        "ref/netstandard1.0/es/System.Reflection.Primitives.xml",
+        "ref/netstandard1.0/fr/System.Reflection.Primitives.xml",
+        "ref/netstandard1.0/it/System.Reflection.Primitives.xml",
+        "ref/netstandard1.0/ja/System.Reflection.Primitives.xml",
+        "ref/netstandard1.0/ko/System.Reflection.Primitives.xml",
+        "ref/netstandard1.0/ru/System.Reflection.Primitives.xml",
+        "ref/netstandard1.0/zh-hans/System.Reflection.Primitives.xml",
+        "ref/netstandard1.0/zh-hant/System.Reflection.Primitives.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.reflection.primitives.4.3.0.nupkg.sha512",
+        "system.reflection.primitives.nuspec"
+      ]
+    },
+    "System.Runtime/4.3.0": {
+      "sha512": "JufQi0vPQ0xGnAczR13AUFglDyVYt4Kqnz1AZaiKZ5+GICq0/1MH/mO/eAJHt/mHW1zjKBJd7kV26SrxddAhiw==",
+      "type": "package",
+      "path": "system.runtime/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net462/System.Runtime.dll",
+        "lib/portable-net45+win8+wp80+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net462/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.dll",
+        "ref/netcore50/System.Runtime.xml",
+        "ref/netcore50/de/System.Runtime.xml",
+        "ref/netcore50/es/System.Runtime.xml",
+        "ref/netcore50/fr/System.Runtime.xml",
+        "ref/netcore50/it/System.Runtime.xml",
+        "ref/netcore50/ja/System.Runtime.xml",
+        "ref/netcore50/ko/System.Runtime.xml",
+        "ref/netcore50/ru/System.Runtime.xml",
+        "ref/netcore50/zh-hans/System.Runtime.xml",
+        "ref/netcore50/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.0/System.Runtime.dll",
+        "ref/netstandard1.0/System.Runtime.xml",
+        "ref/netstandard1.0/de/System.Runtime.xml",
+        "ref/netstandard1.0/es/System.Runtime.xml",
+        "ref/netstandard1.0/fr/System.Runtime.xml",
+        "ref/netstandard1.0/it/System.Runtime.xml",
+        "ref/netstandard1.0/ja/System.Runtime.xml",
+        "ref/netstandard1.0/ko/System.Runtime.xml",
+        "ref/netstandard1.0/ru/System.Runtime.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.2/System.Runtime.dll",
+        "ref/netstandard1.2/System.Runtime.xml",
+        "ref/netstandard1.2/de/System.Runtime.xml",
+        "ref/netstandard1.2/es/System.Runtime.xml",
+        "ref/netstandard1.2/fr/System.Runtime.xml",
+        "ref/netstandard1.2/it/System.Runtime.xml",
+        "ref/netstandard1.2/ja/System.Runtime.xml",
+        "ref/netstandard1.2/ko/System.Runtime.xml",
+        "ref/netstandard1.2/ru/System.Runtime.xml",
+        "ref/netstandard1.2/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.2/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.3/System.Runtime.dll",
+        "ref/netstandard1.3/System.Runtime.xml",
+        "ref/netstandard1.3/de/System.Runtime.xml",
+        "ref/netstandard1.3/es/System.Runtime.xml",
+        "ref/netstandard1.3/fr/System.Runtime.xml",
+        "ref/netstandard1.3/it/System.Runtime.xml",
+        "ref/netstandard1.3/ja/System.Runtime.xml",
+        "ref/netstandard1.3/ko/System.Runtime.xml",
+        "ref/netstandard1.3/ru/System.Runtime.xml",
+        "ref/netstandard1.3/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.3/zh-hant/System.Runtime.xml",
+        "ref/netstandard1.5/System.Runtime.dll",
+        "ref/netstandard1.5/System.Runtime.xml",
+        "ref/netstandard1.5/de/System.Runtime.xml",
+        "ref/netstandard1.5/es/System.Runtime.xml",
+        "ref/netstandard1.5/fr/System.Runtime.xml",
+        "ref/netstandard1.5/it/System.Runtime.xml",
+        "ref/netstandard1.5/ja/System.Runtime.xml",
+        "ref/netstandard1.5/ko/System.Runtime.xml",
+        "ref/netstandard1.5/ru/System.Runtime.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.xml",
+        "ref/portable-net45+win8+wp80+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.runtime.4.3.0.nupkg.sha512",
+        "system.runtime.nuspec"
+      ]
+    },
+    "System.Runtime.Loader/4.3.0": {
+      "sha512": "DHMaRn8D8YCK2GG2pw+UzNxn/OHVfaWx7OTLBD/hPegHZZgcZh3H6seWegrC4BYwsfuGrywIuT+MQs+rPqRLTQ==",
+      "type": "package",
+      "path": "system.runtime.loader/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/_._",
+        "lib/netstandard1.5/System.Runtime.Loader.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/netstandard1.5/System.Runtime.Loader.dll",
+        "ref/netstandard1.5/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/de/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/es/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/fr/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/it/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ja/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ko/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/ru/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hans/System.Runtime.Loader.xml",
+        "ref/netstandard1.5/zh-hant/System.Runtime.Loader.xml",
+        "system.runtime.loader.4.3.0.nupkg.sha512",
+        "system.runtime.loader.nuspec"
+      ]
+    },
+    "System.Text.Encoding/4.3.0": {
+      "sha512": "BiIg+KWaSDOITze6jGQynxg64naAPtqGHBwDrLaCtixsa5bKiR8dpPOHA7ge3C0JJQizJE+sfkz1wV+BAKAYZw==",
+      "type": "package",
+      "path": "system.text.encoding/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Text.Encoding.dll",
+        "ref/netcore50/System.Text.Encoding.xml",
+        "ref/netcore50/de/System.Text.Encoding.xml",
+        "ref/netcore50/es/System.Text.Encoding.xml",
+        "ref/netcore50/fr/System.Text.Encoding.xml",
+        "ref/netcore50/it/System.Text.Encoding.xml",
+        "ref/netcore50/ja/System.Text.Encoding.xml",
+        "ref/netcore50/ko/System.Text.Encoding.xml",
+        "ref/netcore50/ru/System.Text.Encoding.xml",
+        "ref/netcore50/zh-hans/System.Text.Encoding.xml",
+        "ref/netcore50/zh-hant/System.Text.Encoding.xml",
+        "ref/netstandard1.0/System.Text.Encoding.dll",
+        "ref/netstandard1.0/System.Text.Encoding.xml",
+        "ref/netstandard1.0/de/System.Text.Encoding.xml",
+        "ref/netstandard1.0/es/System.Text.Encoding.xml",
+        "ref/netstandard1.0/fr/System.Text.Encoding.xml",
+        "ref/netstandard1.0/it/System.Text.Encoding.xml",
+        "ref/netstandard1.0/ja/System.Text.Encoding.xml",
+        "ref/netstandard1.0/ko/System.Text.Encoding.xml",
+        "ref/netstandard1.0/ru/System.Text.Encoding.xml",
+        "ref/netstandard1.0/zh-hans/System.Text.Encoding.xml",
+        "ref/netstandard1.0/zh-hant/System.Text.Encoding.xml",
+        "ref/netstandard1.3/System.Text.Encoding.dll",
+        "ref/netstandard1.3/System.Text.Encoding.xml",
+        "ref/netstandard1.3/de/System.Text.Encoding.xml",
+        "ref/netstandard1.3/es/System.Text.Encoding.xml",
+        "ref/netstandard1.3/fr/System.Text.Encoding.xml",
+        "ref/netstandard1.3/it/System.Text.Encoding.xml",
+        "ref/netstandard1.3/ja/System.Text.Encoding.xml",
+        "ref/netstandard1.3/ko/System.Text.Encoding.xml",
+        "ref/netstandard1.3/ru/System.Text.Encoding.xml",
+        "ref/netstandard1.3/zh-hans/System.Text.Encoding.xml",
+        "ref/netstandard1.3/zh-hant/System.Text.Encoding.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.text.encoding.4.3.0.nupkg.sha512",
+        "system.text.encoding.nuspec"
+      ]
+    },
+    "System.Threading.Tasks/4.3.0": {
+      "sha512": "LbSxKEdOUhVe8BezB/9uOGGppt+nZf6e1VFyw6v3DN6lqitm0OSn2uXMOdtP0M3W4iMcqcivm2J6UgqiwwnXiA==",
+      "type": "package",
+      "path": "system.threading.tasks/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/netcore50/System.Threading.Tasks.dll",
+        "ref/netcore50/System.Threading.Tasks.xml",
+        "ref/netcore50/de/System.Threading.Tasks.xml",
+        "ref/netcore50/es/System.Threading.Tasks.xml",
+        "ref/netcore50/fr/System.Threading.Tasks.xml",
+        "ref/netcore50/it/System.Threading.Tasks.xml",
+        "ref/netcore50/ja/System.Threading.Tasks.xml",
+        "ref/netcore50/ko/System.Threading.Tasks.xml",
+        "ref/netcore50/ru/System.Threading.Tasks.xml",
+        "ref/netcore50/zh-hans/System.Threading.Tasks.xml",
+        "ref/netcore50/zh-hant/System.Threading.Tasks.xml",
+        "ref/netstandard1.0/System.Threading.Tasks.dll",
+        "ref/netstandard1.0/System.Threading.Tasks.xml",
+        "ref/netstandard1.0/de/System.Threading.Tasks.xml",
+        "ref/netstandard1.0/es/System.Threading.Tasks.xml",
+        "ref/netstandard1.0/fr/System.Threading.Tasks.xml",
+        "ref/netstandard1.0/it/System.Threading.Tasks.xml",
+        "ref/netstandard1.0/ja/System.Threading.Tasks.xml",
+        "ref/netstandard1.0/ko/System.Threading.Tasks.xml",
+        "ref/netstandard1.0/ru/System.Threading.Tasks.xml",
+        "ref/netstandard1.0/zh-hans/System.Threading.Tasks.xml",
+        "ref/netstandard1.0/zh-hant/System.Threading.Tasks.xml",
+        "ref/netstandard1.3/System.Threading.Tasks.dll",
+        "ref/netstandard1.3/System.Threading.Tasks.xml",
+        "ref/netstandard1.3/de/System.Threading.Tasks.xml",
+        "ref/netstandard1.3/es/System.Threading.Tasks.xml",
+        "ref/netstandard1.3/fr/System.Threading.Tasks.xml",
+        "ref/netstandard1.3/it/System.Threading.Tasks.xml",
+        "ref/netstandard1.3/ja/System.Threading.Tasks.xml",
+        "ref/netstandard1.3/ko/System.Threading.Tasks.xml",
+        "ref/netstandard1.3/ru/System.Threading.Tasks.xml",
+        "ref/netstandard1.3/zh-hans/System.Threading.Tasks.xml",
+        "ref/netstandard1.3/zh-hant/System.Threading.Tasks.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.tasks.4.3.0.nupkg.sha512",
+        "system.threading.tasks.nuspec"
       ]
     }
   },
@@ -674,6 +1628,7 @@
     "net8.0": [
       "BlazorStrap >= 5.1.102.51923",
       "BlazorStrap.V5 >= 5.1.102.51723",
+      "EditorJS >= 1.2.0.1",
       "Microsoft.AspNetCore.Components >= 8.0.2"
     ]
   },
@@ -733,6 +1688,10 @@
           "BlazorStrap.V5": {
             "target": "Package",
             "version": "[5.1.102.51723, )"
+          },
+          "EditorJS": {
+            "target": "Package",
+            "version": "[1.2.0.1, )"
           },
           "Microsoft.AspNetCore.Components": {
             "target": "Package",

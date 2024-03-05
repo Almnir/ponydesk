@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using BlazorStrap.V5
 @inject IBlazorStrap _blazorStrap
+@inject NavigationManager NavManager
 
 <PageTitle>Home</PageTitle>
 
@@ -8,7 +9,7 @@
 <br />
 <BSContainer Container="Container.Default" MarginTop="Margins.ExtraLarge">
     <BSButtonGroup>
-        <BSButton Color="BSColor.Default" DataId="circleTooltip" IsActive="true" Padding="0">
+        <BSButton Color="BSColor.Default" DataId="circleTooltip" IsActive="true" Padding="0" OnClick="@(async ()=>NavManager.NavigateTo("/create"))">
             <span class="material-icons">add_circle</span>
         </BSButton>
         <BSTooltip Placement="Placement.Left" Target="circleTooltip">Tooltip on bottom</BSTooltip>

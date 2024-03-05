@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[5.1.102.51723, )"
             },
+            "EditorJS": {
+              "target": "Package",
+              "version": "[1.2.0.1, )"
+            },
             "Microsoft.AspNetCore.Components": {
               "target": "Package",
               "version": "[8.0.2, )"
