@@ -1,23 +1,26 @@
 ﻿@page "/Navbar"
 
-<BSNavbar Color="BSColor.Primary" IsFixedTop="true">
-    <BSContainer Container="Container.Fluid">
-        <BSNavbarBrand Url="javascript:void(0);">
+<div class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="dark">
+    <div class="container">
+        <a href ="../" class="navbar-brand">
             <img src="./img/pony_brand.svg" width="30" class="svg-rotate" />
-            PonyDesk
-        </BSNavbarBrand>        
-        <BSCollapse IsInNavbar="true">
-            <Toggler>
-                <BSNavbarToggle />
-            </Toggler>
-            <Content>
-@*                 <BSNav MarginEnd="Margins.Auto" MarginBottom="Margins.Small" Class="mb-lg-0">
-                    <BSNavItem IsActive="true" Url="javascript:void(0);">Создать заявку</BSNavItem>
-                </BSNav> *@
-            </Content>
-        </BSCollapse>
-    </BSContainer>
-</BSNavbar>
+            <span>
+                PonyDesk
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../create/">Создать заявку</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 @code {
 
 }

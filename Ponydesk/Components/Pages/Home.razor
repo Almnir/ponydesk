@@ -8,8 +8,10 @@
 <br />
 <br />
 <BSContainer Container="Container.Default" MarginTop="Margins.ExtraLarge">
+    <button @onclick="@GoToCreate"></button>
     <BSButtonGroup>
-        <BSButton Color="BSColor.Default" DataId="circleTooltip" IsActive="true" Padding="0" OnClick="@(async ()=>NavManager.NavigateTo("/create"))">
+        <button @onclick="@GoToCreate"></button>
+        <BSButton Color="BSColor.Default" DataId="circleTooltip" Padding="0" OnClick="@GoToCreate">
             <span class="material-icons">add_circle</span>
         </BSButton>
         <BSTooltip Placement="Placement.Left" Target="circleTooltip">Tooltip on bottom</BSTooltip>
@@ -31,8 +33,10 @@
         <BSTooltip Placement="Placement.Left" Target="personTooltip">Tooltip on bottom</BSTooltip>
     </BSButtonGroup>
 </BSContainer>
+<button @onclick="@GoToCreate"></button>
+
 <BSContainer Container="Container.Default" MarginTop="Margins.Small">
-    <BSTable IsResponsive="true" IsStriped="true" IsBordered="true" IsDark="false">
+    <BSTable IsResponsive="true" IsStriped="true" IsBordered="true" IsDark="false" Class="table table-hover">
         <BSTHead>
             <BSTR>
                 <BSTD>#</BSTD>
@@ -78,5 +82,10 @@
         {
             await _blazorStrap.SetBootstrapCss("Vapor");
         }
+    }
+    private void GoToCreate(MouseEventArgs x)
+    {
+        Console.WriteLine("go");
+        NavManager.NavigateTo("/create");
     }
 }

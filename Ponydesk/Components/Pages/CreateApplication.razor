@@ -60,8 +60,8 @@
             <div class="col-sm">
                 <BSInputGroup MarginBottom="Margins.Medium">
                     <span class="@BS.Input_Group_Text">Содержание</span>
-                    @* <BSInput InputType="InputType.TextArea" Value="@("")" /> *@
-                    <Editor Id="editorjs-blazor" Name="editorjs-blazor" Value="EditorValue" ValueChanged="OnEditorValueChanged" Tools="EditorTools" Style="margin-top: 20px; border: thin dashed grey; padding: 0 20px 0 20px;" />
+                    <BSInput InputType="InputType.TextArea" Value="@("")" InputSize="Size.Large"/>
+                    @* <Editor Id="editorjs-blazor" Name="editorjs-blazor" Value="@EditorValue" ValueChanged="OnEditorValueChanged" Tools="EditorTools" /> *@
                 </BSInputGroup>
             </div>
         </div>
@@ -80,7 +80,7 @@
     {"Header":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"LinkTool":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"NestedList":{"LoadActions":{"OptionsNamingScheme":"CamelCase","OverrideOptionsKey":"list"}},"Marker":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"Warning":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"Checklist":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"CodeTool":{"LoadActions":{"OptionsNamingScheme":"CamelCase","OverrideOptionsKey":"code"}},"Delimiter":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"SimpleImage":{"LoadActions":{"OptionsNamingScheme":"CamelCase","OverrideOptionsKey":"image"}},"Embed":{"LoadActions":{"OptionsNamingScheme":"CamelCase"},"options":{"config":{"services":{"instagram":true,"youtube":true,"vimeo":true,"imgur":true,"twitter":true,"facebook":true}}}},"InlineCode":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"Quote":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}},"Table":{"LoadActions":{"OptionsNamingScheme":"CamelCase"}}}
     """";
     JsonObject EditorTools = JsonObject.Parse(editor_tools_json)?.AsObject() ?? new();
-    JsonObject EditorValue;
+    JsonObject? EditorValue;
 
     public Task OnEditorValueChanged(JsonObject value) => Task.FromResult(EditorValue = value);
 
